@@ -13,7 +13,7 @@ body {
   --special-color: #ff900e;
 }
 
-/* Utility classes */
+/****** Utility classes ********/
 .container {
   width: 75vw;
   max-width: 1200px;
@@ -59,9 +59,10 @@ a {
 .special-color {
   color: var(--special-color);
 }
-/* Utility classes End*/
+/****** Utility classes End********/
 
-/* header */
+
+/***** header *******/
 header {
   background: rgba(255, 144, 14, 0.1);
 }
@@ -127,9 +128,10 @@ header {
   margin-top: 1rem;
 }
 
-/* header end */
+/******* header end ********/
 
-/* feature section */
+
+/******* feature section ********/
 .features {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -153,15 +155,10 @@ header {
   width: 89%;
   margin-bottom: 2rem;
 }
-.ash {
-  color: var(--text-paragraph);
-}
-.special-color {
-  color: var(--special-color);
-}
-/* feature section end */
+/***** feature section end *****/
 
-/* Services Section */
+
+/****** Services Section ******/
 .services {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -236,9 +233,10 @@ header {
   line-height: 2rem;
   transition: all 0.6s ease-in-out;
 }
-/* Services Section end */
+/******* Services Section end *********/
 
-/* facts Section */
+
+/******* facts Section *************/
 .facts {
   padding: 3rem 0;
 }
@@ -300,9 +298,9 @@ header {
   color: var(--text-paragraph);
   transition: all ease-in-out 0.5s;
 }
-/* facts Section end */
+/******** facts Section end ***********/
 
-/* Sponsors Section */
+/********* Sponsors Section **********/
 .sponsors {
   padding: 5rem 0;
   text-align: center;
@@ -334,9 +332,10 @@ header {
 .sponsors-container .sponsor:hover {
   transform: scale(1.2, 1.2);
 }
-/* Sponsors Section end */
+/********** Sponsors Section end ***************/
 
-/* Contact-form Section */
+
+/*********** Contact-form Section **************/
 .contact-form {
   display: flex;
   align-items: center;
@@ -389,9 +388,10 @@ header {
   box-shadow: 0 0 4px 5px #ff8a0484;
   text-shadow: 0.1rem 0.1rem 0.3rem rgba(5, 15, 119, 0.753);
 }
-/* Contact-form Section End*/
+/********* Contact-form Section End************/
 
-/* Footer */
+
+/********** Footer **********/
 .footer-container {
   background: rgba(255, 144, 14, 0.1);
   text-align: center;
@@ -402,17 +402,24 @@ header {
   line-height: 1.4rem;
   color: var(--text-special);
 }
-/* Footer End */
+/******** Footer End *********/
+
+
+
+
+
 
 /* ********************* */
 /* media */
-/* medium device */
+/******** medium device *************/
 @media screen and (max-width: 991.98px) {
 
   /*Utility classes*/
   .btn{
     font-size: 1.15rem;
   }
+  /*Utility classes End*/
+
   /* header */
   .logo-content {
     width: 100%;
@@ -529,8 +536,10 @@ header {
   }
   /* contact-form section End */
 }
+/******** medium device end*************/
 
-/* small device */
+
+/*********** small device ****************/
 @media screen and (max-width: 767.98px) {
   /* header */
   .logo {
@@ -638,4 +647,4 @@ header {
   /* Contact-form Section End*/
 
 }
-/* small device end */
+/********* small device end ***************/
