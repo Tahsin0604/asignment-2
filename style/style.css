@@ -33,8 +33,6 @@ a {
   color: var(--text-paragraph);
 }
 .btn {
-  width: 180px;
-  height: 64px;
   background: var(--special-color);
   border-radius: 8px;
   font-weight: 600;
@@ -45,10 +43,15 @@ a {
   margin: 2rem 0;
   cursor: pointer;
   border: 0;
-  transition: transform 0.5s ease-in;
+  transition: all 0.5s ease-in;
 }
 .btn:hover {
-  transform: scale(1.1, 1.1) rotate(360deg);
+  transform: scale(1.1, 1.1);
+  border: 1px solid var(--special-color);
+  background: #ffffff;
+  color: var(--special-color);
+  box-shadow: 0 0 5px 2px #f985006d;
+  
 }
 .ash {
   color: var(--text-paragraph);
@@ -102,6 +105,7 @@ header {
 }
 .menu-list li a:hover {
   color: var(--special-color);
+  
 }
 .banner {
   text-align: center;
@@ -131,6 +135,7 @@ header {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 73px;
+  padding-bottom: 3rem;
 }
 .feature-pics {
   display: grid;
@@ -160,7 +165,7 @@ header {
 .services {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding: 7rem 0;
+  padding: 3rem 0;
   gap: 80px;
 }
 
@@ -403,6 +408,11 @@ header {
 /* media */
 /* medium device */
 @media screen and (max-width: 991.98px) {
+
+  /*Utility classes*/
+  .btn{
+    font-size: 1.15rem;
+  }
   /* header */
   .logo-content {
     width: 100%;
@@ -428,6 +438,18 @@ header {
     width: 100%;
     border-bottom: 1px solid var(--text-special);
   }
+  .menu-list li a {
+
+    font-size: 1.2rem;
+    
+  }
+  .banner .banner-text {
+    width: 100%;
+}
+  .banner .banner-title {
+    font-size: 3rem;
+    line-height: 3.6rem;
+  }
   /* header end */
 
   /* feature section */
@@ -437,7 +459,10 @@ header {
   .feature-text {
     width: 100%;
   }
-
+  .feature-title {
+    font-size: 2.6rem;
+  }
+  
   /* feature section end*/
 
   /* Services Section */
@@ -445,26 +470,36 @@ header {
     grid-template-columns: repeat(1, 1fr);
     gap: 1.5rem;
   }
-  .service-text-portion {
-    width: 100%;
+  
+  .service-text-portion .service-title {
+    width: 80%;   
+    font-size: 2.6rem;    
   }
   .service-image-portion .btn-big {
     top: -100px;
     left: -50px;
-    padding: 36px 30px;
+    padding: 36px 40px;
   }
   .btn-big h2 {
-    font-size: 3rem;
-    line-height: 2.4rem;
+    font-size: 2rem;
+    line-height: 2rem;
   }
   .btn-big p {
     font-size: 1.1rem;
-    line-height: 2rem;
+    line-height: 1.5rem;
   }
   /* services section end */
 
   /* facts section */
-
+  .facts {
+    padding: 2rem 0;
+  }
+  .facts .facts-title {
+    
+    font-size: 2.6rem;
+    line-height: 3.2rem;
+    
+  }
   .facts .paragraph {
     width: 100%;
   }
@@ -477,11 +512,20 @@ header {
   .sponsors .paragraph {
     width: 100%;
   }
+  .sponsors-container {
+    gap: 4%;
+  }
   /* Sponsor Section end */
 
   /* contact-form section */
   .contact-form {
     flex-direction: column;
+    gap: 50px;
+  }
+  .contact-text .contact-title {
+    font-size: 2.6rem;
+    line-height: 3rem;
+    
   }
   /* contact-form section End */
 }
@@ -496,7 +540,7 @@ header {
     width: 100%;
   }
   .banner .banner-title {
-    font-size: 3rem;
+    font-size: 2.3rem;
   }
   /* header end */
 
@@ -505,15 +549,25 @@ header {
     grid-template-columns: repeat(1, 1fr);
   }
   .feature-title {
-    font-size: 2.3rem;
+    font-size: 2.1rem;
   }
   /* feature section */
 
   /* services section */
   .service-text-portion .service-title {
     width: 100%;
-    font-size: 2.3rem;
+    font-size: 2.1rem;
     line-height: 40px;
+  }
+  .service {
+    padding: 15px;
+    
+  }
+  .service .title {
+    
+    font-size: 1.12rem;
+    line-height: 20px;
+    
   }
   .service-image-portion .btn-big {
     top: -43px;
@@ -533,8 +587,8 @@ header {
 
   /* Facts sections */
   .facts .facts-title {
-    font-size: 2.3rem;
-    line-height: 3.2rem;
+    font-size: 2.1rem;
+    line-height: 3rem;
   }
   .facts-container {
     flex-direction: column;
@@ -557,6 +611,10 @@ header {
   /* Facts sections end */
 
   /* Sponsors Section */
+  .sponsors .sponsors-title {    
+    font-size: 2.1rem;
+    line-height: 3rem;
+  }
   .sponsors-container {
     grid-template-columns: repeat(1, 1fr);
     gap: 40px;
@@ -566,5 +624,18 @@ header {
     width: 28vw;
   }
   /* Sponsors Section End */
+
+  /* Contact-form Section */
+  .contact-form { 
+    padding: 1rem 0;
+  }
+  .contact-text .contact-title {
+    
+    font-size: 2.1rem;
+    line-height: 3rem;
+    
+  }
+  /* Contact-form Section End*/
+
 }
 /* small device end */
